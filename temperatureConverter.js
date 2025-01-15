@@ -3,7 +3,10 @@ function convertFromCelsius(){
     if (celsius != ""){
         document.getElementById("fahrenheitInp").value = (Number(celsius)*9/5)+32;
         document.getElementById("kelvinInp").value = Number(celsius)+273.15;
-        if(celsius>=0 && celsius<=29){
+        if(celsius<0){
+            document.body.style.backgroundColor = "lightblue"
+        }
+        else if(celsius>=0 && celsius<=29){
             document.body.style.backgroundColor = "lightblue"
         }
         else if(celsius>=30 && celsius<=39){
@@ -25,7 +28,10 @@ function convertFromFahrenheit(){
     if (fahrenheit != ""){
         document.getElementById("celsiusInp").value = (Number(fahrenheit)-32)*5/9;
         document.getElementById("kelvinInp").value = (Number(fahrenheit)-32)*5/9+273.15;
-        if(fahrenheit>=32 && fahrenheit<=84){
+        if(fahrenheit<32){
+            document.body.style.backgroundColor = "lightblue"
+        }
+        else if(fahrenheit>=32 && fahrenheit<=84){
             document.body.style.backgroundColor = "lightblue"
         }
         else if(fahrenheit>=85 && fahrenheit<=103){
@@ -47,7 +53,10 @@ function convertFromKelvin(){
     if (kelvin != ""){
         document.getElementById("celsiusInp").value = (Number(kelvin)-273.15);
         document.getElementById("fahrenheitInp").value = (Number(kelvin)-273.15)*9/5+32;
-        if(kelvin>=273 && kelvin<=302){
+        if(kelvin<273){
+            document.body.style.backgroundColor = "lightblue"
+        }
+        else if(kelvin>=273 && kelvin<=302){
             document.body.style.backgroundColor = "lightblue"
         }
         else if(kelvin>=303 && kelvin<=312){
