@@ -2,6 +2,9 @@
 
 A simple and responsive Temperature Converter built using HTML, CSS, and JavaScript. This project allows users to convert temperatures between Celsius, Fahrenheit, and Kelvin in real-time. The background color dynamically changes based on the Celsius temperature range, offering an interactive and visually engaging experience.
 
+Click below to start the game:
+[Start the Game]()
+
 ## Features
 
 - Convert temperatures between **Celsius**, **Fahrenheit**, and **Kelvin**.
